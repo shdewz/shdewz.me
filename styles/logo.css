@@ -1,124 +1,127 @@
 .logo {
-    position: relative;
-    width: 30rem;
-    aspect-ratio: 2.5;
-    height: auto;
-    transform: translateX(4px);
-    max-width: max(12rem, calc(90vw - 6rem));
-    margin: 2rem 0;
-}
-
-.logo-main-stroke {
-    fill: none;
-    stroke: var(--primary-400);
-    stroke-linecap: round;
-    stroke-linejoin: round;
-    stroke-width: 12px;
-}
-
-.logo-alt-stroke {
-    fill: none;
-    stroke: var(--text-100);
-    stroke-linecap: round;
-    stroke-linejoin: round;
-    stroke-width: 18px;
-}
-
-.logo-script {
-    position: absolute;
-}
-
-.logo-script-shadow-1 {
-    top: 4px;
-    left: 4px;
-}
-
-.logo-script-shadow-2 {
-    top: 7px;
-    left: 7px;
+  font-size: 16px;
+  position: relative;
+  width: 96%;
+  aspect-ratio: 2.5;
+  height: auto;
+  transform: translateX(0.25em);
+  margin: 6% 0;
 }
 
 .logo-section {
-    position: absolute;
-    width: 100%;
+  position: absolute;
+  inset: 0;
+}
+
+.section-shadow-1 {
+  transform: translate(0.5%, 1%);
+}
+
+.section-shadow-2 {
+  transform: translate(1%, 2%);
+}
+
+.logo-main-stroke {
+  fill: none;
+  stroke: var(--primary-400);
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 0.75em;
+}
+
+.logo-alt-stroke {
+  fill: none;
+  stroke: var(--text-100);
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.125em;
+}
+
+.logo-script {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: block;
+  transform-box: fill-box;
+  transform-origin: center;
 }
 
 #logo-script-1 {
-    stroke-dasharray: 721.4617309570312;
-    stroke-dashoffset: 721.4617309570312;
-    animation: draw1 0.7s ease-in forwards;
+  stroke-dasharray: 721.4617309570312;
+  stroke-dashoffset: 721.4617309570312;
+  animation: draw1 0.7s ease-in forwards;
 }
 
 #logo-script-2 {
-    stroke-dasharray: 367.5168151855469;
-    stroke-dashoffset: 367.5168151855469;
-    animation: draw2 0.4s ease-out forwards 0.7s;
+  stroke-dasharray: 367.5168151855469;
+  stroke-dashoffset: 367.5168151855469;
+  animation: draw2 0.4s ease-out forwards 0.7s;
 }
 
 #logo-script-3 {
-    stroke-dasharray: 244.02120971679688;
-    stroke-dashoffset: 244.02120971679688;
-    animation: draw3 0.3s ease-in forwards 1.1s;
+  stroke-dasharray: 244.02120971679688;
+  stroke-dashoffset: 244.02120971679688;
+  animation: draw3 0.3s ease-in forwards 1.1s;
 }
 
 #logo-script-4 {
-    stroke-dasharray: 308.8777770996094;
-    stroke-dashoffset: 308.8777770996094;
-    animation: draw4 0.3s ease-out forwards 1.4s;
+  stroke-dasharray: 308.8777770996094;
+  stroke-dashoffset: 308.8777770996094;
+  animation: draw4 0.3s ease-out forwards 1.4s;
 }
 
 #logo-script-5 {
-    stroke-dasharray: 352.29901123046875;
-    stroke-dashoffset: 352.29901123046875;
-    animation: draw5 0.8s ease-out forwards 1.7s;
+  stroke-dasharray: 352.29901123046875;
+  stroke-dashoffset: 352.29901123046875;
+  animation: draw5 0.8s ease-out forwards 1.7s;
 }
 
 @keyframes draw1 {
-    0% {
-        stroke-dashoffset: 721.4617309570312;
-    }
+  0% {
+    stroke-dashoffset: 721.4617309570312;
+  }
 
-    100% {
-        stroke-dashoffset: 0;
-    }
+  100% {
+    stroke-dashoffset: 0;
+  }
 }
 
 @keyframes draw2 {
-    0% {
-        stroke-dashoffset: 367.5168151855469;
-    }
+  0% {
+    stroke-dashoffset: 367.5168151855469;
+  }
 
-    100% {
-        stroke-dashoffset: 0;
-    }
+  100% {
+    stroke-dashoffset: 0;
+  }
 }
 
 @keyframes draw3 {
-    0% {
-        stroke-dashoffset: 244.02120971679688;
-    }
+  0% {
+    stroke-dashoffset: 244.02120971679688;
+  }
 
-    100% {
-        stroke-dashoffset: 0;
-    }
+  100% {
+    stroke-dashoffset: 0;
+  }
 }
 
 @keyframes draw4 {
-    0% {
-        stroke-dashoffset: 308.8777770996094;
-    }
+  0% {
+    stroke-dashoffset: 308.8777770996094;
+  }
 
-    100% {
-        stroke-dashoffset: 0;
-    }
+  100% {
+    stroke-dashoffset: 0;
+  }
 }
 
 @keyframes draw5 {
-    0% {
-        stroke-dashoffset: 352.29901123046875;
-    }
+  0% {
+    stroke-dashoffset: 352.29901123046875;
+  }
 
-    100% {
-        stroke-dashoffset: 0;
-    }
+  100% {
+    stroke-dashoffset: 0;
+  }
 }
